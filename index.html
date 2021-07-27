@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CA DeepakMali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="profile">
+            <h1>DeepakMali</h1>
+            <h2>Hello! I am Chartant Accountant from Rajasthan,Pali.I have rich
+                experience in bussiness,also I am good at Account Management
+            </h2>
+            <button type="button">Contect Me</button>
+        </div>
+        <div id="profile_pic">
+            <img src="IMG_3673.JPG" alt="" class="employee">
+            <img src="IMG_3673.JPG" alt="" class="shadow1">
+            <img src="IMG_3673.JPG" alt="" class="shadow2">
+        </div>
+        <img src="Untitled-1 copy.png" alt="" id="close">
+    </div>
+
+    <script>
+        var profile= document.getElementById('profile');
+        var show = document.getElementById('profile_pic');
+        var hidden =document.getElementById('close')
+        show.onclick=function(){
+            profile.style.left = "-100%"
+            show.classList.add('preview');
+            hidden.style.display = "block"
+        }
+        hidden.onclick=function(){
+            profile.style.left = "100px"
+            show.classList.remove('preview');
+            hidden.style.display = "none"
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
